@@ -112,8 +112,8 @@ function build_gdb() {
   cd gdb-${GDB_VERSION}
   ./configure --target=${TARGET} --enable-sim --prefix=/usr/local/
   make
-  cp -fv gdb-${GDB_VERSION}/gdb/gdb ./arm-linux-gdb
   cd -
+  cp -fv gdb-${GDB_VERSION}/gdb/gdb ./arm-linux-gdb
 }
 
 function gen_gdb_init() {
